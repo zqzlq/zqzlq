@@ -1,95 +1,199 @@
-## Hi there 👋 I'm QiQiLu
+<div align="center">
 
-```javascript
-const qiqilu = {
-  identity: "🎓 学生 | 💻 全栈开发者",
-  askMeAbout: ["Web 开发", "项目折腾", "Bug 玄学"],
-  currentlyLearning: "一切有趣的东西 🚀",
-  funFact: "写代码的时间比写作业多 😄"
-};
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&multiline=true&repeat=true&width=500&height=100&lines=Hi+there%2C+I'm+QiQiLu+%F0%9F%91%8B;Full-Stack+Developer;AI+Agent+Explorer;Open+Source+Contributor)
+
+[![GitHub followers](https://img.shields.io/github/followers/zqzlq?style=flat-square&logo=github&color=00F7FF)](https://github.com/zqzlq)
+
+</div>
+
+---
+
+<div align="center">
+
+```
+    ╔═══════════════════════════════════════════════════════════════╗
+    ║                                                               ║
+    ║      ██████╗ ██╗ ██████╗ ██╗██╗     ██╗   ██╗                ║
+    ║     ██╔═══██╗██║██╔═══██╗██║██║     ██║   ██║                ║
+    ║     ██║   ██║██║██║   ██║██║██║     ██║   ██║                ║
+    ║     ██║▄▄ ██║██║██║▄▄ ██║██║██║     ██║   ██║                ║
+    ║     ╚██████╔╝██║╚██████╔╝██║███████╗╚██████╔╝                ║
+    ║      ╚══▀▀═╝ ╚═╝ ╚══▀▀═╝ ╚═╝╚══════╝ ╚═════╝                ║
+    ║                                                               ║
+    ╚═══════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+---
+
+<div align="center">
+
+### `> cat /etc/passwd | grep qiqilu`
+
+</div>
+
+```
+┌────────────────────────────────────────────────────────────────────┐
+│                                                                    │
+│   Username   : qiqilu                                              │
+│   Shell      : /bin/zsh                                            │
+│   Home       : /home/qiqilu                                        │
+│   Groups     : developers, ai-enthusiasts, open-source-lovers      │
+│   Last Login : Just now, probably coding something cool            │
+│                                                                    │
+│   ┌─────────────────────────────────────────────────────────────┐  │
+│   │  "I don't always test my code, but when I do,               │  │
+│   │   I do it in production." 🚀                                │  │
+│   └─────────────────────────────────────────────────────────────┘  │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-### 🔭 关于我
+<div align="center">
 
-一个热爱技术的学生全栈开发者，喜欢从零到一把想法变成现实。  
-前端能写页面，后端能搭服务，偶尔搞搞脚本自动化，主打一个 **"什么都会一点，什么都在学更多"**。
+### `> htop`
 
----
+</div>
 
-### 🛠️ 技术栈
+```
+┌────────────────────────────────────────────────────────────────────┐
+│  PID   USER      PRI  NI  VIRT   RES   SHR   S  CPU%  MEM%  CMD  │
+├────────────────────────────────────────────────────────────────────┤
+│  1337  qiqilu     20   0  999G   64G   32G   R   99   80   agent  │
+│  1338  qiqilu     20   0  256G   16G    8G   S   75   20   webapp │
+│  1339  qiqilu     20   0  128G    8G    4G   S   50   10   blog   │
+│  1340  qiqilu     20   0   64G    4G    2G   S   25    5   oss    │
+└────────────────────────────────────────────────────────────────────┘
 
-<p>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
-</p>
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■] 100% AI Agent Development
+[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■      ]  85% Web Applications
+[■■■■■■■■■■■■■■■■■■■■■■■■              ]  60% Tech Writing
+[■■■■■■■■■■■■■■■■■                      ]  40% Open Source
+```
 
 ---
 
-### 📊 GitHub 统计
+<div align="center">
 
-<p>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=zqzlq&show_icons=true&theme=radical&hide_border=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zqzlq&layout=compact&theme=radical&hide_border=true" />
-</p>
+### `> neofetch`
 
-<p>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=zqzlq&theme=radical&hide_border=true" />
-</p>
+</div>
 
----
-
-### 🌱 当前状态
-
-- 📚 在校学习中，不断探索新技术
-- 🔨 正在做：个人项目 & 课程设计
-- 🤝 希望参与：开源项目、有趣的协作
-- 💬 欢迎交流：技术问题、项目想法、摸鱼聊天都行
-
----
-
-### 📫 联系我
-
-<p>
-  <a href="https://github.com/zqzlq"><img src="https://img.shields.io/badge/GitHub-zqzlq-181717?style=flat-square&logo=github" /></a>
-  <a href="mailto:wy3393675686@163.com"><img src="https://img.shields.io/badge/Email-wy3393675686@163.com-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
-</p>
+```
+                    'c.          qiqilu@github
+                 ,xNMM.          ─────────────────
+               .OMMMMo           OS: Full-Stack Developer
+               OMMM0,            Host: GitHub
+     .;loddo:' loolloddol;.     Kernel: JavaScript/TypeScript/Python
+   cKMMMMMMMMMMNWMMMMMMMMMM0:   Uptime: coding since forever
+ .KMMMMMMMMMMMMMMMMMMMMMMMWd.   Packages: React, Vue, Node.js, AI stuff
+ XMMMMMMMMMMMMMMMMMMMMMMMX.    Shell: Coffee.sh
+;MMMMMMMMMMMMMMMMMMMMMMMM:     Resolution: 1920x1080 (dual monitor master race)
+:MMMMMMMMMMMMMMMMMMMMMMMM:     DE: VS Code + Vim motions
+.MMMMMMMMMMMMMMMMMMMMMMMMX.    WM: Tiling (i3/sway vibes)
+ kMMMMMMMMMMMMMMMMMMMMMMMMWd.   Theme: Dark mode everything
+ .XMMMMMMMMMMMMMMMMMMMMMMMMk   Icons: Material Design
+  .XMMMMMMMMMMMMMMMMMMMMK.     Terminal: Hyper/Warp
+    kMMMMMMMMMMMMMMMMMMd.       CPU: M1/M2 or whatever is fastest
+     ;KMMMMMMMWXXWMMMKo.        Memory: "Download more RAM"
+       .cooc,.    .,coo:.
+```
 
 ---
 
-<details>
-  <summary>🎲 隐藏彩蛋</summary>
-  <br>
+<div align="center">
 
-  ```
-  你发现了彩蛋！🥚
+### `> ls ~/skills/`
 
-  程序员三大错觉：
-  1. 这个 bug 很简单
-  2. 我不需要写测试
-  3. 这次一定能准时下班
-  ```
+</div>
 
-</details>
+<div align="center">
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vue.js&logoColor=4FC08D)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
 
 ---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=zqzlq&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile views" />
-</p>
+<div align="center">
 
-⭐ *感谢你访问我的 Profile！如果觉得不错，点个 Star 吧~*
+### `> git log --graph --oneline`
+
+</div>
+
+<div align="center">
+
+![Commits](https://img.shields.io/github/commit-activity/m/zqzlq/zqzlq?style=flat-square&logo=github&color=00F7FF)
+![Stars](https://img.shields.io/github/stars/zqzlq/zqzlq?style=flat-square&logo=github&color=FFD700)
+![Followers](https://img.shields.io/github/followers/zqzlq?style=flat-square&logo=github&color=00FF7F)
+
+</div>
+
+---
+
+<div align="center">
+
+### `> curl -s https://api.github.com/users/zqzlq`
+
+</div>
+
+<div align="center">
+
+```json
+{
+  "name": "QiQiLu",
+  "bio": "Building AI agents that are smarter than me",
+  "company": "Open Source",
+  "location": "China",
+  "public_repos": "...",
+  "followers": "...",
+  "following": "...",
+  "created_at": "The beginning of my coding journey",
+  "message": "Feel free to reach out! Always happy to chat about code, AI, or random tech stuff."
+}
+```
+
+[![GitHub](https://img.shields.io/badge/Follow_Me-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zqzlq)
+
+</div>
+
+---
+
+<div align="center">
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│                                                                │
+│   Thanks for visiting my profile!                              │
+│                                                                │
+│   If you find my work helpful, consider:                       │
+│   - Giving a star ⭐ to my repos                               │
+│   - Following me for updates                                   │
+│   - Or just say hi! 👋                                         │
+│                                                                │
+│   Remember: "It works on my machine" is a valid excuse.        │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+---
+
+<div align="center">
+
+### `> contribution-graph`
+
+![Snake animation](https://raw.githubusercontent.com/zqzlq/zqzlq/output/github-contribution-grid-snake-dark.svg)
+
+</div>
