@@ -8,107 +8,29 @@
 
 ---
 
-<div align="center">
+### About Me
 
-```
-    ╔═══════════════════════════════════════════════════════════════╗
-    ║                                                               ║
-    ║      ██████╗ ██╗ ██████╗ ██╗██╗     ██╗   ██╗                ║
-    ║     ██╔═══██╗██║██╔═══██╗██║██║     ██║   ██║                ║
-    ║     ██║   ██║██║██║   ██║██║██║     ██║   ██║                ║
-    ║     ██║▄▄ ██║██║██║▄▄ ██║██║██║     ██║   ██║                ║
-    ║     ╚██████╔╝██║╚██████╔╝██║███████╗╚██████╔╝                ║
-    ║      ╚══▀▀═╝ ╚═╝ ╚══▀▀═╝ ╚═╝╚══════╝ ╚═════╝                ║
-    ║                                                               ║
-    ╚═══════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
----
-
-<div align="center">
-
-### `> cat /etc/passwd | grep qiqilu`
-
-</div>
-
-```
-┌────────────────────────────────────────────────────────────────────┐
-│                                                                    │
-│   Username   : qiqilu                                              │
-│   Shell      : /bin/zsh                                            │
-│   Home       : /home/qiqilu                                        │
-│   Groups     : developers, ai-enthusiasts, open-source-lovers      │
-│   Last Login : Just now, probably coding something cool            │
-│                                                                    │
-│   ┌─────────────────────────────────────────────────────────────┐  │
-│   │  "I don't always test my code, but when I do,               │  │
-│   │   I do it in production." 🚀                                │  │
-│   └─────────────────────────────────────────────────────────────┘  │
-│                                                                    │
-└────────────────────────────────────────────────────────────────────┘
+```javascript
+const qiqilu = {
+  role: "Full-Stack Developer",
+  focus: ["AI Agent", "Web Development", "Open Source"],
+  motto: "Building AI agents that are smarter than me",
+  funFact: "I don't always test my code, but when I do, I do it in production"
+};
 ```
 
 ---
 
-<div align="center">
+### Currently Working On
 
-### `> htop`
-
-</div>
-
-```
-┌────────────────────────────────────────────────────────────────────┐
-│  PID   USER      PRI  NI  VIRT   RES   SHR   S  CPU%  MEM%  CMD  │
-├────────────────────────────────────────────────────────────────────┤
-│  1337  qiqilu     20   0  999G   64G   32G   R   99   80   agent  │
-│  1338  qiqilu     20   0  256G   16G    8G   S   75   20   webapp │
-│  1339  qiqilu     20   0  128G    8G    4G   S   50   10   blog   │
-│  1340  qiqilu     20   0   64G    4G    2G   S   25    5   oss    │
-└────────────────────────────────────────────────────────────────────┘
-
-[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■] 100% AI Agent Development
-[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■      ]  85% Web Applications
-[■■■■■■■■■■■■■■■■■■■■■■■■              ]  60% Tech Writing
-[■■■■■■■■■■■■■■■■■                      ]  40% Open Source
-```
+- Exploring **AI Agent frameworks** (LangChain, AutoGPT, etc.)
+- Building **full-stack web applications**
+- Writing **tech blogs**
+- Contributing to **open source projects**
 
 ---
 
-<div align="center">
-
-### `> neofetch`
-
-</div>
-
-```
-                    'c.          qiqilu@github
-                 ,xNMM.          ─────────────────
-               .OMMMMo           OS: Full-Stack Developer
-               OMMM0,            Host: GitHub
-     .;loddo:' loolloddol;.     Kernel: JavaScript/TypeScript/Python
-   cKMMMMMMMMMMNWMMMMMMMMMM0:   Uptime: coding since forever
- .KMMMMMMMMMMMMMMMMMMMMMMMWd.   Packages: React, Vue, Node.js, AI stuff
- XMMMMMMMMMMMMMMMMMMMMMMMX.    Shell: Coffee.sh
-;MMMMMMMMMMMMMMMMMMMMMMMM:     Resolution: 1920x1080 (dual monitor master race)
-:MMMMMMMMMMMMMMMMMMMMMMMM:     DE: VS Code + Vim motions
-.MMMMMMMMMMMMMMMMMMMMMMMMX.    WM: Tiling (i3/sway vibes)
- kMMMMMMMMMMMMMMMMMMMMMMMMWd.   Theme: Dark mode everything
- .XMMMMMMMMMMMMMMMMMMMMMMMMk   Icons: Material Design
-  .XMMMMMMMMMMMMMMMMMMMMK.     Terminal: Hyper/Warp
-    kMMMMMMMMMMMMMMMMMMd.       CPU: M1/M2 or whatever is fastest
-     ;KMMMMMMMWXXWMMMKo.        Memory: "Download more RAM"
-       .cooc,.    .,coo:.
-```
-
----
-
-<div align="center">
-
-### `> ls ~/skills/`
-
-</div>
+### Tech Stack
 
 <div align="center">
 
@@ -125,11 +47,7 @@
 
 ---
 
-<div align="center">
-
-### `> git log --graph --oneline`
-
-</div>
+### GitHub Activity
 
 <div align="center">
 
@@ -141,27 +59,9 @@
 
 ---
 
-<div align="center">
-
-### `> curl -s https://api.github.com/users/zqzlq`
-
-</div>
+### Let's Connect
 
 <div align="center">
-
-```json
-{
-  "name": "QiQiLu",
-  "bio": "Building AI agents that are smarter than me",
-  "company": "Open Source",
-  "location": "China",
-  "public_repos": "...",
-  "followers": "...",
-  "following": "...",
-  "created_at": "The beginning of my coding journey",
-  "message": "Feel free to reach out! Always happy to chat about code, AI, or random tech stuff."
-}
-```
 
 [![GitHub](https://img.shields.io/badge/Follow_Me-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zqzlq)
 
@@ -171,28 +71,15 @@
 
 <div align="center">
 
-```
-┌────────────────────────────────────────────────────────────────┐
-│                                                                │
-│   Thanks for visiting my profile!                              │
-│                                                                │
-│   If you find my work helpful, consider:                       │
-│   - Giving a star ⭐ to my repos                               │
-│   - Following me for updates                                   │
-│   - Or just say hi! 👋                                         │
-│                                                                │
-│   Remember: "It works on my machine" is a valid excuse.        │
-│                                                                │
-└────────────────────────────────────────────────────────────────┘
-```
+*"Code with passion, build with purpose."*
+
+If you find my work helpful, consider giving a star to my repos or just say hi!
 
 </div>
 
 ---
 
 <div align="center">
-
-### `> contribution-graph`
 
 ![Snake animation](https://raw.githubusercontent.com/zqzlq/zqzlq/output/github-contribution-grid-snake-dark.svg)
 
