@@ -41,27 +41,29 @@ jobs:
 
           node <<'NODE'
           const fs = require('fs');
-          const canvas = '#FFFFFF';
-          const emptyCell = '#CBD5E1';
+          // Goal: outside grid + gaps = white, empty cells = gray (set by URL color_dots[0])
+          // Strategy: make every background / gap CSS variable white, leave cell colors untouched
 
           for (const file of fs.readdirSync('dist').filter((name) => name.endsWith('.svg'))) {
             const path = `dist/${file}`;
-            const svg = fs.readFileSync(path, 'utf8');
-            const cleanSvg = svg.replace(/<rect data-profile-bg="[^"]+"[^>]*\/>/, '');
-            const viewBox = cleanSvg.match(/viewBox="([^"]+)"/)?.[1]?.trim().split(/\s+/).map(Number);
-            const [x, y, width, height] = viewBox?.length === 4 ? viewBox : [0, 0, 880, 192];
+            let svg = fs.readFileSync(path, 'utf8');
 
-            fs.writeFileSync(
-              path,
-              cleanSvg
-                .replace(
-                  /(<svg\b[^>]*>)/,
-                  `$1<rect data-profile-bg="white-canvas" x="${x}" y="${y}" width="${width}" height="${height}" fill="${canvas}"/>`
-                )
-                .replace(/--cb:#[0-9a-fA-F]{6,8}/, `--cb:${canvas}`)
-                .replace(/--ce:#[0-9a-fA-F]{6,8}/, `--ce:${emptyCell}`)
-                .replace(/--c0:#[0-9a-fA-F]{6,8}/, `--c0:${emptyCell}`)
+            // ── CSS-level fixes (controls gaps + edges via snk variables) ──
+            // --cb = canvas background (visible through cell gaps)
+            svg = svg.replace(/--cb:#[0-9a-fA-F]{3,8}/gi, '--cb:#FFFFFF');
+            svg = svg.replace(/--ce:#[0-9a-fA-F]{3,8}/gi, '--ce:#FFFFFF');
+            // Some dark palettes also set --ca (alternate background)
+            svg = svg.replace(/--ca:#[0-9a-fA-F]{3,8}/gi, '--ca:#FFFFFF');
+
+            // ── Inline-level fix (fallback: the first background <rect>) ──
+            // snk v3 renders a full-viewport <rect> as the canvas; turn it white.
+            // Only touch rects whose fill is a literal hex (not var(--c*)) to avoid cells.
+            svg = svg.replace(
+              /(<rect\b(?!.*?\bfill="var\(--c))[^>]*?\bfill=")(#[0-9a-fA-F]{3,8})(")/gi,
+              '$1#FFFFFF$3'
             );
+
+            fs.writeFileSync(path, svg);
           }
           NODE
 
