@@ -56,6 +56,9 @@ jobs:
             svg = svg.replace(/--ce:#[0-9a-fA-F]{3,8}/gi, '--ce:#FFFFFF');
             svg = svg.replace(/--ca:#[0-9a-fA-F]{3,8}/gi, '--ca:#FFFFFF');
 
+            // Empty cells (0 contributions) = #CBD5E1 slate gray
+            svg = svg.replace(/--c0:#[0-9a-fA-F]{3,8}/gi, '--c0:#CBD5E1');
+
             fs.writeFileSync(path, svg);
           }
           NODE
