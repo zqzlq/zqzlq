@@ -35,6 +35,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Paint SVG background white
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          for (const file of fs.readdirSync('dist').filter((name) => name.endsWith('.svg'))) {
+            const path = `dist/${file}`;
+            const svg = fs.readFileSync(path, 'utf8');
+            if (svg.includes('data-profile-bg="white"')) continue;
+            fs.writeFileSync(
+              path,
+              svg.replace(
+                /(<svg\b[^>]*>)/,
+                '$1<rect data-profile-bg="white" x="-100%" y="-100%" width="300%" height="300%" fill="#FFFFFF"/>'
+              )
+            );
+          }
+          NODE
+
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
