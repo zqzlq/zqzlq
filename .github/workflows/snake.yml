@@ -31,6 +31,7 @@ jobs:
       - name: Commit and push
         run: |
           cd dist
+          [ -d .git ] && chmod -R u+w .git
           rm -rf .git
           git init
           git config user.name "github-actions[bot]"
