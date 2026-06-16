@@ -1,12 +1,17 @@
-name: Generate Snake Animation
+name: Feed Contribution Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    # GitHub may delay scheduled jobs, but this keeps the profile feeling alive.
+    - cron: "17 */4 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -20,13 +25,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate snake svg
+      - name: Generate snake SVGs
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?color_snake=39D353&color_dots=161B22,1B3A2D,0E5C36,26A641,39D353
-            dist/github-contribution-grid-snake.svg?color_snake=39D353&color_dots=EBEDF0,9BE9A8,40C463,30A14E,216E39
+            dist/github-contribution-grid-snake-dark.svg?color_snake=F59E0B&color_dots=0B1220,123040,155E75,0891B2,22D3EE
+            dist/github-contribution-grid-snake.svg?color_snake=F59E0B&color_dots=EBEDF0,BFDBFE,67E8F9,22D3EE,0891B2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
