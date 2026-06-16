@@ -35,24 +35,32 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Paint SVG background gray
+      - name: Paint SVG canvas white
         run: |
           sudo chown -R "$(id -u):$(id -g)" dist
 
           node <<'NODE'
           const fs = require('fs');
+          const canvas = '#FFFFFF';
+          const emptyCell = '#CBD5E1';
+
           for (const file of fs.readdirSync('dist').filter((name) => name.endsWith('.svg'))) {
             const path = `dist/${file}`;
             const svg = fs.readFileSync(path, 'utf8');
-            if (svg.includes('data-profile-bg="soft-gray"')) continue;
+            const cleanSvg = svg.replace(/<rect data-profile-bg="[^"]+"[^>]*\/>/, '');
+            const viewBox = cleanSvg.match(/viewBox="([^"]+)"/)?.[1]?.trim().split(/\s+/).map(Number);
+            const [x, y, width, height] = viewBox?.length === 4 ? viewBox : [0, 0, 880, 192];
+
             fs.writeFileSync(
               path,
-              svg
+              cleanSvg
                 .replace(
                   /(<svg\b[^>]*>)/,
-                  '$1<rect data-profile-bg="soft-gray" x="-100%" y="-100%" width="300%" height="300%" fill="#CBD5E1"/>'
+                  `$1<rect data-profile-bg="white-canvas" x="${x}" y="${y}" width="${width}" height="${height}" fill="${canvas}"/>`
                 )
-                .replace(/--cb:#[0-9a-fA-F]{6,8}/, '--cb:#CBD5E1')
+                .replace(/--cb:#[0-9a-fA-F]{6,8}/, `--cb:${canvas}`)
+                .replace(/--ce:#[0-9a-fA-F]{6,8}/, `--ce:${emptyCell}`)
+                .replace(/--c0:#[0-9a-fA-F]{6,8}/, `--c0:${emptyCell}`)
             );
           }
           NODE
