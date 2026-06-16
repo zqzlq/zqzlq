@@ -74,7 +74,7 @@ It is not exactly real-time, because GitHub README files cannot run custom JavaS
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td align="center" bgcolor="#FFFFFF">
-      <img src="https://raw.githubusercontent.com/zqzlq/zqzlq/output/github-contribution-grid-snake-dark.svg?v=green-snake-white-canvas-gray-cells" width="100%" alt="Contribution snake" />
+      <img src="https://raw.githubusercontent.com/zqzlq/zqzlq/output/github-contribution-grid-snake-profile.svg" width="100%" alt="Contribution snake" />
     </td>
   </tr>
 </table>

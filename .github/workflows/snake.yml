@@ -30,26 +30,40 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?color_snake=%2322C55E&color_dots=%23CBD5E1,%2314532D,%2316A34A,%2322C55E,%23BBF7D0
+            dist/github-contribution-grid-snake-profile.svg?color_snake=%2322C55E&color_dots=%23CBD5E1,%2386EFAC,%234ADE80,%2322C55E,%2316A34A
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%2322C55E&color_dots=%23CBD5E1,%2386EFAC,%234ADE80,%2322C55E,%2316A34A
             dist/github-contribution-grid-snake.svg?color_snake=%2316A34A&color_dots=%23CBD5E1,%23BBF7D0,%2386EFAC,%2322C55E,%2315803D
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Paint SVG canvas white
+      - name: Normalize snake SVG colors
         run: |
           sudo chown -R "$(id -u):$(id -g)" dist
 
           node <<'NODE'
           const fs = require('fs');
-          for (const file of fs.readdirSync('dist').filter(function (n) { return n.endsWith('.svg'); })) {
-            const path = 'dist/' + file;
-            var svg = fs.readFileSync(path, 'utf8');
 
-            // --cb = gaps / stroke between cells → white
-            // --ce = default cell fill (empty cells) → slate gray
-            // --c0..--c4 = contribution levels (set by URL params, left untouched)
-            svg = svg.replace(/--cb:\s*#[0-9a-fA-F]{3,8}/gi, '--cb:#FFFFFF');
-            svg = svg.replace(/--ce:\s*#[0-9a-fA-F]{3,8}/gi, '--ce:#CBD5E1');
+          const canvas = '#FFFFFF';
+          const snake = '#22C55E';
+          const emptyCell = '#CBD5E1';
+          const levels = ['#CBD5E1', '#86EFAC', '#4ADE80', '#22C55E', '#16A34A'];
+
+          for (const file of fs.readdirSync('dist').filter((name) => name.endsWith('.svg'))) {
+            const path = `dist/${file}`;
+            let svg = fs.readFileSync(path, 'utf8');
+            const viewBox = svg.match(/viewBox="([^"]+)"/)?.[1]?.trim().split(/\s+/).map(Number);
+            const box = viewBox && viewBox.length === 4 ? viewBox : [0, 0, 880, 192];
+            const background = `<rect data-profile-bg="white-canvas" x="${box[0]}" y="${box[1]}" width="${box[2]}" height="${box[3]}" fill="${canvas}"/>`;
+
+            svg = svg.replace(/<rect data-profile-bg="[^"]+"[^>]*\/>/g, '');
+            svg = svg.replace(/(<svg\b[^>]*>)/, `$1${background}`);
+            svg = svg.replace(/--cb:\s*#[0-9a-fA-F]{3,8}/gi, `--cb:${canvas}`);
+            svg = svg.replace(/--cs:\s*#[0-9a-fA-F]{3,8}/gi, `--cs:${snake}`);
+            svg = svg.replace(/--ce:\s*#[0-9a-fA-F]{3,8}/gi, `--ce:${emptyCell}`);
+
+            for (let i = 0; i < levels.length; i++) {
+              svg = svg.replace(new RegExp(`--c${i}:\\s*#[0-9a-fA-F]{3,8}`, 'gi'), `--c${i}:${levels[i]}`);
+            }
 
             fs.writeFileSync(path, svg);
           }
