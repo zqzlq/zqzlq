@@ -71,7 +71,7 @@ It is not exactly real-time, because GitHub README files cannot run custom JavaS
 
 <div align="center">
 
-![Contribution snake](https://raw.githubusercontent.com/zqzlq/zqzlq/output/github-contribution-grid-snake-dark.svg?v=amber-snake-green-commits)
+![Contribution snake](https://raw.githubusercontent.com/zqzlq/zqzlq/output/github-contribution-grid-snake-dark.svg?v=green-snake-green-commits)
 
 </div>
 
